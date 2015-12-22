@@ -5,7 +5,7 @@
   s.homepage     = "https://github.com/retuxx/tinyspline.git"
   s.license      = 'Copyright VIPAAR 2015'
   s.author       = 'retuxx' 
-  s.source       = { :path => "/Users/user/HL/libtinyspline-ios", :tag => "1.0.0" }
+  s.source       = { :path => "https://github.com/lwrnczeng/tinysplinefork.git", :tag => "1.0.0" }
   s.source_files = 'libtinyspline/*.{h,m}'
   s.requires_arc = false
 end
