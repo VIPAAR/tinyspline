@@ -1,4 +1,4 @@
-TinySpline
+TinySpline [![Build Status](https://travis-ci.org/VIPAAR/tinyspline.svg?branch=master)](https://travis-ci.org/VIPAAR/tinyspline)
 ========
 
 TinySpline is a C library for
