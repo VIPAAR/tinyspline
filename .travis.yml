@@ -1,0 +1,15 @@
+language: objective-c
+script:
+- xcodebuild -workspace libtinyspline.xcodeproj/project.xcworkspace -scheme libtinyspline
+  -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+notifications:
+  email:
+    recipients:
+    - builds@helplightning.com
+    on_success: change
+    on_failure: always
+  slack:
+    on_success: always
+    on_failure: always
+    rooms:
+      secure: K11SfawpPzBdswR+oZQvu7vQNMMBRd623G/6UXeW5njcAZ4M2Pk0c9uWj80gG716QrjFp/rSOnqIpXf8G3KkaBgsaZ2kyZM4UFUXIqMkbsgY1HY/3Yrsv48Y3CB6HT0d+Z6bM/mXtbD100+CuEZyJjL6sNdGXjlEEq5P/PX10rZt7J18oRzdWGon/rF3dqxiNejlltWvGmYcGm+GNqaJ345CdJXo2OdGIkpaS8RZCgriQ7stcKzttyHqjEj0WiXQt+0d+ObWj7ibTkiEVSltaT7le0JOSoPsNl1GRGzGkyEqXfeH/eqmPgor/8p6lWkQKIrQMjXOR4fVQ1dCyAcBXe8JCAzRJZOmeojSSnOWErxNTVAlOgLDNZyT0WEmICT/fBoHCxZr9vCXZMxY+4GXGWld6Nv1FNvdlTwqEbHv7XwgdNChmR4W6exIc/TOYPPB7Zk6JIFYz5y+fYWX3ag3RmBE3OTbfyY08BlFap+2qIH68IT5uzjyTcB8dXXJ+xBCLdDtHs55hQdjYT8/V0U0Ng0i29/QcLCbSDncv8M4KvEgol1qqUc/cAmIygDG7YLM2VMc2/b66C7uI5wGu8ppDK6ZTwZRpHIwZ2waf8AOThQz3UACqFJqilMuyONR1I6X8pt1/npjR0vlBsxw1mxIFYLZ6tWRG/LkesRJXDG7PMM=
